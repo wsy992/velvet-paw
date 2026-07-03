@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script><style>[x-cloak] { display: none !important; }</style><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background-warm": "#FFF8F0",
+                    "outline-variant": "#ddc1b3",
+                    "surface-container-highest": "#eae1da",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline": "#897266",
+                    "on-primary-container": "#6a2d00",
+                    "emergency": "#FF3B30",
+                    "fur-gray": "#808080",
+                    "on-tertiary-fixed": "#00201d",
+                    "lavender": "#C5B4E3",
+                    "secondary-container": "#ff6b9d",
+                    "background": "#fff8f4",
+                    "text-secondary": "#8E8E93",
+                    "surface-container": "#f6ece5",
+                    "on-surface-variant": "#564338",
+                    "surface-container-high": "#f0e6e0",
+                    "tertiary-fixed-dim": "#8ad4cc",
+                    "secondary-fixed": "#ffd9e1",
+                    "surface": "#fff8f4",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "warning": "#FF9500",
+                    "fur-brown-dark": "#8B6F47",
+                    "fur-gold": "#FFD700",
+                    "secondary": "#ac2a5d",
+                    "secondary-fixed-dim": "#ffb1c5",
+                    "surface-tint": "#9b4500",
+                    "on-tertiary-container": "#004742",
+                    "on-surface": "#1f1b17",
+                    "primary-container": "#ff8c42",
+                    "surface-variant": "#eae1da",
+                    "inverse-on-surface": "#f9efe8",
+                    "on-background": "#1f1b17",
+                    "surface-bright": "#fff8f4",
+                    "error": "#ba1a1a",
+                    "fur-brown-light": "#D4A574",
+                    "surface-dim": "#e2d8d2",
+                    "tertiary-container": "#6db7af",
+                    "tertiary": "#156963",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#331200",
+                    "primary": "#9b4500",
+                    "on-secondary-container": "#6e0034",
+                    "tertiary-fixed": "#a5f0e8",
+                    "primary-fixed": "#ffdbc9",
+                    "inverse-surface": "#34302b",
+                    "on-secondary-fixed": "#3f001b",
+                    "surface-container-low": "#fcf2eb",
+                    "on-secondary-fixed-variant": "#8c0a46",
+                    "success": "#34C759",
+                    "on-tertiary-fixed-variant": "#00504b",
+                    "text-main": "#2D2D2D",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#ffb68d",
+                    "on-primary-fixed-variant": "#763300",
+                    "inverse-primary": "#ffb68d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "unit": "4px",
+                    "stack-md": "16px",
+                    "gutter-desktop": "24px",
+                    "stack-lg": "24px",
+                    "margin-mobile": "20px",
+                    "gutter-mobile": "16px",
+                    "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                    "body-md": ["Nunito Sans"],
+                    "body-lg": ["Nunito Sans"],
+                    "body-sm": ["Nunito Sans"],
+                    "headline-lg": ["Nunito Sans"],
+                    "label-lg": ["Nunito Sans"],
+                    "label-sm": ["Nunito Sans"],
+                    "headline-md": ["Nunito Sans"],
+                    "headline-lg-mobile": ["Nunito Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-lg": ["14px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+                    "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["26px", {"lineHeight": "32px", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script></head><body class="font-body-md text-text-main pb-32" x-data="{ activeTab: 'timeline' }">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 dark:bg-on-background/80 backdrop-blur-md shadow-sm hidden md:flex">
+<div class="flex justify-between items-center px-margin-mobile py-stack-sm w-full max-w-[1200px] mx-auto">
+<div class="flex items-center gap-stack-sm">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="A small, stylized avatar of a cute fluffy cat face in a warm healing cartoon style, suitable for a pet app icon, soft cream and orange colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmTujI2nGr1ZD0GzvdMG5PKm_oXXYwqPnXHQGETUUA88ua7GHzunoGmKqKZvI_y1XVfiq_avHNk0Px_-AEZ__f_j7TNaFawG4AblPE4Mpz0CXgt1upFn-sh1BtmKZ2u_rDvbG5VcVtABBejMnqb8d2oAorg1oOt2L35waJ4r2LYLt4g-VkLLH75WFDrKnYwaCnm_mEcvNOpFXD2BCiQNmuHxqbMSK7XLNmhk4t2FFWiGx6rH7V-GHoqA">
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">档案</h1>
+</div>
+<nav class="flex gap-gutter-desktop">
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity font-label-lg text-label-lg" href="#">首页</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity font-label-lg text-label-lg" href="#">AI 助手</a>
+<a class="text-primary hover:opacity-80 transition-opacity font-label-lg text-label-lg" href="#">档案</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity font-label-lg text-label-lg" href="#">监控</a>
+</nav>
+<button class="text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<!-- Mobile Top Header (Non-Nav) -->
+<header class="md:hidden fixed top-0 w-full z-40 bg-background-warm/90 backdrop-blur-md shadow-sm py-stack-sm px-margin-mobile flex justify-between items-center">
+<h1 class="font-headline-md text-headline-md text-primary">档案</h1>
+<button class="text-primary hover:opacity-80">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="max-w-[1200px] mx-auto pt-20 md:pt-28 px-margin-mobile md:px-margin-desktop min-h-screen">
+<!-- Segmented Control -->
+<div class="w-full max-w-sm mx-auto mb-stack-lg mt-2 flex bg-surface-container p-1 rounded-full shadow-sm"><button :class="activeTab === 'timeline' ? 'bg-surface-container-lowest text-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'" @click="activeTab = 'timeline'" class="flex-1 py-2 rounded-full font-label-lg transition-all duration-300 text-center bg-surface-container-lowest text-primary shadow-sm">成长时间轴</button><button :class="activeTab === 'album' ? 'bg-surface-container-lowest text-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'" @click="activeTab = 'album'" class="flex-1 py-2 rounded-full font-label-lg transition-all duration-300 text-center text-on-surface-variant hover:text-on-surface">成长相册</button></div>
+<!-- Timeline View -->
+<div x-show="activeTab === 'timeline'" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-4">
+<!-- Profile Header -->
+<section class="bg-gradient-to-br from-primary-fixed to-surface-container-highest rounded-3xl p-stack-lg mb-stack-lg ambient-shadow relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-white/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-stack-md relative z-10">
+<img class="w-24 h-24 rounded-full border-4 border-white ambient-shadow object-cover" data-alt="A beautiful close-up photo of a fluffy white and orange cat (milk cap pattern) looking gently at the camera, warm lighting, cozy home background, high quality portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLb4LX4AwwdRW2sEImg2WS9Jaerhpa2hWTd5PtOatCG91to5OYuahXvhiRpZr3RQcps4Xl7Iyxn8xvlibCSWaFCMB-RH4omE4SkNW3FglUDyL_aYEFja4sk8KFXAAj18tR-6azGw-V8LxN0eefF9RKm4mSzA5NIxQ3kR7Yda_zhG9bOypGSzG4Wm1KEjAoOEzeOUs4r9L4CBMchtnXPlDNQPOzWl12casX6Rire5T1azdSgniKdq3f0Q">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">奶盖</h2>
+<span class="bg-secondary-fixed text-on-secondary-container rounded-full px-2 py-0.5 text-xs font-bold flex items-center">
+<span class="material-symbols-outlined text-[14px]" data-icon="female">female</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">出生于: 2024.06.15</p>
+<p class="font-label-lg text-label-lg text-primary">1岁17天</p>
+</div>
+</div>
+</section>
+<!-- Function Tabs (Glassmorphism) -->
+<section class="flex overflow-x-auto gap-stack-sm pb-2 mb-stack-lg snap-x no-scrollbar">
+<button class="glass-tab px-6 py-2 rounded-full snap-start whitespace-nowrap bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm border-none">
+                疫苗
+            </button>
+<button class="glass-tab px-6 py-2 rounded-full snap-start whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:bg-white/80 transition-colors">
+                驱虫
+            </button>
+<button class="glass-tab px-6 py-2 rounded-full snap-start whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:bg-white/80 transition-colors">
+                体重
+            </button>
+<button class="glass-tab px-6 py-2 rounded-full snap-start whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:bg-white/80 transition-colors">
+                Notes
+            </button>
+</section>
+<!-- Timeline -->
+<section class="pl-2">
+<div class="relative timeline-node mb-stack-lg group">
+<div class="timeline-line flex gap-stack-md relative z-10">
+<div class="w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px]" data-icon="vaccines">vaccines</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-stack-md ambient-shadow flex-1 hover:shadow-md transition-shadow">
+<span class="font-label-sm text-label-sm text-tertiary mb-1 block">2025.06.15</span>
+<h3 class="font-body-lg text-body-lg text-on-surface">年度疫苗</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">猫三联加强针。下一次在1年后。</p>
+</div>
+</div>
+</div>
+<div class="relative timeline-node mb-stack-lg group">
+<div class="timeline-line flex gap-stack-md relative z-10">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container text-[18px]" data-icon="bug_report">bug_report</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-stack-md ambient-shadow flex-1 hover:shadow-md transition-shadow">
+<span class="font-label-sm text-label-sm text-secondary mb-1 block">2025.05.01</span>
+<h3 class="font-body-lg text-body-lg text-on-surface">驱虫记录</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">已进行体内外驱虫。</p>
+</div>
+</div>
+</div>
+<div class="relative timeline-node mb-stack-lg group">
+<div class="timeline-line flex gap-stack-md relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container text-[18px]" data-icon="monitor_weight">monitor_weight</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-stack-md ambient-shadow flex-1 hover:shadow-md transition-shadow">
+<span class="font-label-sm text-label-sm text-primary mb-1 block">2025.04.01</span>
+<h3 class="font-body-lg text-body-lg text-on-surface">体重记录</h3>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="text-2xl font-bold text-on-surface">4.2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">kg</span>
+</div>
+</div>
+</div>
+</div>
+<div class="relative timeline-node mb-stack-lg group">
+<div class="timeline-line flex gap-stack-md relative z-10">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]" data-icon="favorite">favorite</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-stack-md ambient-shadow flex-1 hover:shadow-md transition-shadow">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1 block">2025.03.15</span>
+<h3 class="font-body-lg text-body-lg text-on-surface">首次体检</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">身体健康，活泼好动。已注册芯片。</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Album View -->
+<div class="space-y-stack-lg relative pb-10" x-show="activeTab === 'album'" x-transition:enter="transition ease-out duration-300" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-4" style="display: none;">
+<!-- Mobile Upload FAB (Sticky at top right below header for Album) -->
+<div class="md:hidden sticky top-[80px] z-40 flex justify-end mb-stack-md pointer-events-none">
+<button class="pointer-events-auto bg-primary text-on-primary p-3 rounded-full shadow-fluffy-active active:scale-95 transition-all duration-300 flex items-center justify-center translate-y-2">
+<span class="material-symbols-outlined fill text-[24px]">add_photo_alternate</span>
+</button>
+</div>
+<!-- Month Section: June 2025 -->
+<section class="relative">
+<!-- Sticky Header -->
+<div class="sticky top-[130px] md:top-[140px] z-30 py-2 backdrop-blur-md bg-background-warm/90 rounded-b-xl mb-stack-md -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0 flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+                        2025年6月
+                        <span class="font-body-sm text-body-sm text-text-secondary bg-surface-container px-2 py-1 rounded-full">12 张照片</span>
+</h2>
+<button class="text-primary hover:opacity-80 active:scale-95 transition-transform p-1 rounded-full hover:bg-surface-container">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+<!-- Bento Grid for Photos -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-stack-sm md:gap-stack-md auto-rows-[160px] md:auto-rows-[220px]">
+<!-- Large Feature Photo (Spans 2 rows, 2 cols on tablet+) -->
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer active:scale-[0.98] transition-transform duration-300">
+<img alt="Cat playing with yarn" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A bright, cheerful photo of a fluffy white cat with light brown ears playing with a brightly colored, soft yarn ball on a sunlit wooden floor. The lighting is warm and natural, casting soft shadows, creating a joyful and cozy atmosphere typical of a happy pet home." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATqYUADWGizXEr0dumurWDKnbsLCYCKbQJxMgGM2wVSRGH_qq94iPMx7LsYRqTpal6HVV3eFAww2dnBvulOcoFYR7_Ax_RIl7k4QyPwUNT38IjkH9g08z_pn7h6hfiibtHjS2ALvxTnQtpCoIUutKM8uRUDxcmQxdIe4yjQkwa1zq4Kak2hYwSRopedqZ4aMgYjDitp8GtIBAb60LWxLx4gzF1aJEA7mVRL553luFbEPf8Cr_c_lDwMg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<span class="font-label-lg text-label-lg text-white">游戏时间！</span>
+<span class="font-body-sm text-body-sm text-white/80">6月28日</span>
+</div>
+</div>
+<!-- Standard Grid Photos -->
+<div class="rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer active:scale-[0.98] transition-transform duration-300">
+<img alt="Cat sleeping" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A close up photo of a fluffy white cat sleeping soundly wrapped in a plush, pastel lavender blanket. Soft, diffused morning light illuminates the scene, emphasizing the softness of the fur and the cozy, peaceful mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjOqu2aZqJCX2lspMK36G0I8KfmlKNnU_RGxI7JtHU2eF17D2CqwXMlkIeDN1Sh1Z8uPk05sQstgiycyIkklK6tiEuRuapOmgIkDTwtH0pqoT5Swq_mtZ3ORZyZDITKMJvjXPkhUdUo8rh4qFdoA2Y96ZlpvEKi_juuMdZMz4Q_sMvkk9InP0GZSvOl7uL8VzCnXny-crqy7WJaEuq65R7BKu9SeS49sI8EDAAOi8plFw3asN8b7XIKg">
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer active:scale-[0.98] transition-transform duration-300">
+<img alt="Cat looking out window" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A photo of a fluffy white cat sitting attentively by a window, looking out at a bright, sunny garden. The lighting highlights the cat's silhouette against the warm outdoor light. The setting is a cozy, modern home interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-mDvKrngtEVNuA2HExTSZSMARUKPJGOWE7l55FOquEq5YIClrh1P9BifrtzC4QzZtK4yKKeuOXqIVLtdSGfM1_khGb7m8lYQRZwOxQgJZr56b8FGoh9a9XTTJfOUkG3ByxgH8lNVDvDb4LwxHcQ1R4DNmX53eyqOheObHygiGkWNAfDdVlTedfrgr16b6bgHn9T8qUQmvRo_830fyknOLb5qQsI6qpiSxbEtoxqnQHA_nUCBOEJLKTw">
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer active:scale-[0.98] transition-transform duration-300">
+<img alt="Cat playing with bubble" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A playful shot of a fluffy white cat pawing at a gently floating soap bubble indoors. The background is slightly blurred showing a warm, inviting living room with soft beige and cream tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzG5oXwXYu3IjZBpRzATKET8ZCzo2n4Ut0ZrhAk-sUkFMmpRORNiyVYoQAyBPi8mU-Wktn4T9ahjFX3KGkAj57idCKf0wlPc0Ar8ioOoOZzvr9HFCTT7_jdf13b67msFhKPG1HvUSvTg48TXqgrtZjVe1c78DtSVQOAlcL9u11-x0x2xYpN9C1nlKv4Fr2ijRrEO5vHnTRRiZYrIQbwawmjbu6k3OIdcubzvRjp2ZQdS4xgQ3qZ263Kw">
+</div>
+<div class="col-span-2 md:col-span-1 rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer active:scale-[0.98] transition-transform duration-300">
+<img alt="Cat wearing scarf" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A charming photo of a fluffy white cat wearing a tiny, soft-knitted orange scarf. The cat is sitting on a plush cream-colored rug, looking directly at the camera with large, bright eyes. The overall mood is incredibly cute and warm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh4bL1ZZbDtjOCpjYmG3l1B8GTUoOD0kMQYqJk_rb3L1qhAQok9JzlIcr-WjOhkelAq90UEc7FE3u6zbG_ADCQ9oC_86uExO-w9NSEb7nqKVefgZhFtt7O_ht9Vptrb3qwGbMKRXB8mTOSCUmXV8wLCGhYcv8PHjn91vZ_Ek9mpxmdW65I51cn6BRRVQH1M74-N5qKn4iKzBgYaXJ2L002NEY3YaGmarsZIY0gsD6q_2_gnFGmF6RN9Q">
+</div>
+</div>
+</section>
+<!-- Month Section: May 2025 -->
+<section class="relative">
+<!-- Sticky Header -->
+<div class="sticky top-[130px] md:top-[140px] z-30 py-2 backdrop-blur-md bg-background-warm/90 rounded-b-xl mb-stack-md -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0 flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+                        2025年5月
+                        <span class="font-body-sm text-body-sm text-text-secondary bg-surface-container px-2 py-1 rounded-full">8 张照片</span>
+</h2>
+<button class="text-primary hover:opacity-80 active:scale-95 transition-transform p-1 rounded-full hover:bg-surface-container">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+<!-- Grid Layout for Photos -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-stack-sm md:gap-stack-md auto-rows-[160px] md:auto-rows-[220px]">
+<div class="rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer active:scale-[0.98] transition-transform duration-300">
+<img alt="Cat eating" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A candid photo of a fluffy white cat eating from a modern, minimalist ceramic bowl. The lighting is bright and clean, focusing on the healthy, well-cared-for appearance of the pet in a tidy, warm home environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD44_JgVxp8p3fylW4mXHvBPAfn09ZVzqbZ4Pz4SLNK_6wuHidBXle29Vr8CwFAPmM3hdlGRLjSudVyAxy6JDCDMfJsuzTi7nGO5eBoHKoT8AzqbwkWEMi_watqB_6cwhCzUqmSwNb0Pwym3Wi9e8v7TzvoooCPK0hiU7NfLzzJxa4wTmy5ZC-hfUHJh5_Iq5bl34ShNZGBDg9-TqubdJIUgQvnK9l8vswkFjfU_js8LQFhb-aYdpyPvQ">
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer active:scale-[0.98] transition-transform duration-300">
+<img alt="Cat curled up" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A soft, dreamy photo of a fluffy white cat curled up into a perfect ball on a beige linen sofa. The afternoon sun casts long, warm shadows across the room, enhancing the sleepy, relaxed atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGzPMen7B9Blsdx7yDALWMyB2ewZos0LJOH53nLYYWyy-BNTGyu061rZsJTdFmdlJzhzGn7UhFcGCcrDjo74VAe_9qEX7rI-jtLE-ZCqfA_bmIyYEehpH4xWvV57Le0EfgfFt6j3xuwMatyZWqcawzPAMrDaMK3uCUapShSQwYdOXzZkoEyJ2HUZ3RoUre1EKaHw5Vg2ZkvzBe2emp6bI8Stawl7NRe17eiJ_mUe_9ujT6tHe60MsXAw">
+</div>
+<!-- Wide Feature Photo -->
+<div class="col-span-2 rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer active:scale-[0.98] transition-transform duration-300">
+<img alt="Cat amongst plants" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A wide landscape photo of a fluffy white cat exploring a sun-dappled indoor balcony filled with healthy green potted plants. The contrast between the bright green leaves and the white fur creates a fresh, lively, and vibrant scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXIhJDg5u6x8jenR9_eRalBrO4UfRRBlPtfP3Dc7sDMJIBK1zvZvYEdu367Q49GXkXN7pGN8VTpRShetsOFpxW8GGo8ovyO9zofJPiw03kcU0CPi-IvCiABh7oRmTQznUyL_A6gDYm23FvanAYikH8kvs1eRd70K9lOL6eYlOaerjgdxaEZvZrTvd7d6NYstpnew5bybYJq6oYC47c8elyn25xh7_yxFdOYna_Mie7pc61UQ_r7Deniw">
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Floating Action Button for Timeline View -->
+<button class="fixed bottom-24 right-6 md:right-10 bg-primary text-on-primary rounded-full px-6 py-4 flex items-center gap-2 shadow-[0_8px_16px_rgba(255,140,66,0.3)] hover:scale-105 transition-transform duration-300 z-40 spring-hover" x-show="activeTab === 'timeline'">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+<span class="font-label-lg text-label-lg">添加记录</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-[0_-4px_12px_rgba(0,0,0,0.06)] rounded-t-xl z-50"><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm mt-1">首页</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-sm text-label-sm mt-1">AI 助手</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-4 py-1 animate-bounce" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-label-sm text-label-sm mt-1">档案</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+<span class="font-label-sm text-label-sm mt-1">监控</span>
+</a></nav>
+
+
+
+</body></html>

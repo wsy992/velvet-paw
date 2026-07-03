@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Velvet Paw - AI Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background-warm": "#FFF8F0",
+                        "outline-variant": "#ddc1b3",
+                        "surface-container-highest": "#eae1da",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline": "#897266",
+                        "on-primary-container": "#6a2d00",
+                        "emergency": "#FF3B30",
+                        "fur-gray": "#808080",
+                        "on-tertiary-fixed": "#00201d",
+                        "lavender": "#C5B4E3",
+                        "secondary-container": "#ff6b9d",
+                        "background": "#fff8f4",
+                        "text-secondary": "#8E8E93",
+                        "surface-container": "#f6ece5",
+                        "on-surface-variant": "#564338",
+                        "surface-container-high": "#f0e6e0",
+                        "tertiary-fixed-dim": "#8ad4cc",
+                        "secondary-fixed": "#ffd9e1",
+                        "surface": "#fff8f4",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "warning": "#FF9500",
+                        "fur-brown-dark": "#8B6F47",
+                        "fur-gold": "#FFD700",
+                        "secondary": "#ac2a5d",
+                        "secondary-fixed-dim": "#ffb1c5",
+                        "surface-tint": "#9b4500",
+                        "on-tertiary-container": "#004742",
+                        "on-surface": "#1f1b17",
+                        "primary-container": "#ff8c42",
+                        "surface-variant": "#eae1da",
+                        "inverse-on-surface": "#f9efe8",
+                        "on-background": "#1f1b17",
+                        "surface-bright": "#fff8f4",
+                        "error": "#ba1a1a",
+                        "fur-brown-light": "#D4A574",
+                        "surface-dim": "#e2d8d2",
+                        "tertiary-container": "#6db7af",
+                        "tertiary": "#156963",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#331200",
+                        "primary": "#9b4500",
+                        "on-secondary-container": "#6e0034",
+                        "tertiary-fixed": "#a5f0e8",
+                        "primary-fixed": "#ffdbc9",
+                        "inverse-surface": "#34302b",
+                        "on-secondary-fixed": "#3f001b",
+                        "surface-container-low": "#fcf2eb",
+                        "on-secondary-fixed-variant": "#8c0a46",
+                        "success": "#34C759",
+                        "on-tertiary-fixed-variant": "#00504b",
+                        "text-main": "#2D2D2D",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#ffb68d",
+                        "on-primary-fixed-variant": "#763300",
+                        "inverse-primary": "#ffb68d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "unit": "4px",
+                        "stack-md": "16px",
+                        "gutter-desktop": "24px",
+                        "stack-lg": "24px",
+                        "margin-mobile": "20px",
+                        "gutter-mobile": "16px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Nunito Sans"],
+                        "body-lg": ["Nunito Sans"],
+                        "body-sm": ["Nunito Sans"],
+                        "headline-lg": ["Nunito Sans"],
+                        "label-lg": ["Nunito Sans"],
+                        "label-sm": ["Nunito Sans"],
+                        "headline-md": ["Nunito Sans"],
+                        "headline-lg-mobile": ["Nunito Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+                        "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .squishy-shadow {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
+        }
+        .active-shadow {
+            box-shadow: 0 8px 16px rgba(255, 140, 66, 0.2);
+        }
+        .inner-dimple {
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-warm text-on-background min-h-screen pb-[100px] flex flex-col font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 dark:bg-on-background/80 backdrop-blur-md shadow-sm transition-transform duration-200 ease-out hover:opacity-80 flex justify-between items-center px-margin-mobile py-stack-sm md:hidden">
+<div class="flex items-center gap-stack-sm">
+<div class="w-[40px] h-[40px] rounded-full overflow-hidden border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="A cute stylized cartoon cat avatar with a warm orange and cream color palette, big expressive eyes, and a small pink nose. The style is soft, tactile, and reminiscent of Animal Crossing characters. The lighting is soft and inviting, emphasizing a friendly and approachable mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4rwxUj30icZM5rZ5vMXsRHH9PhttqIBfZLqontLGgqVzudGhPePnazGnJkY4hh5SenjmSy9lQ1JlVfJTKd79eU-n2aK7pSfBtfjN1qwRoDGxc_whX6thOMy49pJdKQQZSU6oxyUhXrGssDPUtan_UmixFiSd-gvDHF7y_afbXqB2XW28PsThFMQ6woLhwOf9OFCxfHCA3XgblxIg8icRn_-CaFsIOxE6RST4uUmdu3xN5l97pFJ8Mdw"/>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">Velvet Paw</h1>
+</div>
+<button class="w-[40px] h-[40px] flex items-center justify-center rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</header>
+<!-- Desktop Nav Cluster (Hidden on Mobile) -->
+<header class="hidden md:flex fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md px-margin-desktop py-stack-md justify-between items-center max-w-[1200px] mx-auto left-0 right-0">
+<div class="flex items-center gap-stack-md">
+<div class="w-[48px] h-[48px] rounded-full overflow-hidden border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="A cute stylized cartoon cat avatar with a warm orange and cream color palette, big expressive eyes, and a small pink nose. The style is soft, tactile, and reminiscent of Animal Crossing characters. The lighting is soft and inviting, emphasizing a friendly and approachable mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ2j75rqUdC6713XYdV4rH3sAdfRUi6Nz59jw7r-F7cHAZSSPZAHcSAcNiKPE_Om_qeAEdn2gAEDTOe91vTXt2rjG1ggHvO43n3kvay1KrBlphrvEsPjAVR3T8JfMe4BQsB8llgmiBqTJvbz1zAx6w04Bt-p_al2WaQGYRokejuqFZ80S4aYbbXguNS-l0Avt4Tyj1q0_fLBCEo0-iBrU3vQcbE51VwmTlvCgAaT5vsbNdu7-BDUlD3Q"/>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Velvet Paw</h1>
+</div>
+<nav class="flex gap-gutter-desktop items-center">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:opacity-80 transition-opacity" href="#">首页</a>
+<a class="font-label-lg text-label-lg text-primary bg-primary-container/20 px-4 py-2 rounded-full flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+                AI 助手
+            </a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:opacity-80 transition-opacity" href="#">档案</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:opacity-80 transition-opacity" href="#">监控</a>
+</nav>
+<button class="w-[40px] h-[40px] flex items-center justify-center rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</header>
+<!-- Main Chat Canvas -->
+<main class="flex-1 mt-[80px] md:mt-[100px] px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto w-full flex flex-col gap-stack-lg pb-stack-lg relative">
+<!-- Chat Date/Header -->
+<div class="text-center font-label-sm text-label-sm text-text-secondary mt-stack-md">
+            Today, 10:24 AM
+        </div>
+<!-- Chat Area -->
+<div class="flex-1 flex flex-col gap-stack-lg overflow-y-auto hide-scrollbar pb-[180px]">
+<!-- AI Message -->
+<div class="flex items-start gap-stack-sm max-w-[85%] md:max-w-[70%]">
+<div class="w-[36px] h-[36px] rounded-full overflow-hidden shrink-0 squishy-shadow border border-surface-container-high bg-white">
+<img class="w-full h-full object-cover p-1" data-alt="A small, friendly 3D cartoon cat assistant face. The cat is white with orange patches, looking helpful and attentive. The style is highly stylized and cute, like a modern app mascot, with soft studio lighting and smooth textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbB9AI-lXrE4_ff3S1CurgZn8X3IC_AHE1u3kpPSCgz8N3NDXchAj_oPE090xiQrZvKY_Vxc-KKTqOj9CquTgtyb44N9rehAWgfhuKjvRosGXj_E6BG07qK0cL1uMCPRmyRDvatk7PMDxv4fkxjYrGcgJq9h_7LhXWGWgOM27-FGK9aGwQzmSIuQVlUKCdTND38aIjLe1Co4QZ4R2QnRbdyADjBU9XplkuuM56oVEKuzc0_nyKUgQlLw"/>
+</div>
+<div class="flex flex-col gap-unit">
+<span class="font-label-sm text-label-sm text-text-secondary pl-2">奶盖's Assistant</span>
+<div class="bg-white text-text-main font-body-md text-body-md p-stack-md rounded-[20px] rounded-tl-[4px] squishy-shadow">
+                        我是奶盖的专属助手，今天想了解奶盖的什么情况？
+                    </div>
+</div>
+</div>
+<!-- Proactive Tip Card (AI) -->
+<div class="flex items-start gap-stack-sm max-w-[85%] md:max-w-[70%]">
+<div class="w-[36px] h-[36px] shrink-0"></div> <!-- Spacer for alignment -->
+<div class="bg-surface-container text-on-surface font-body-md text-body-md p-stack-md rounded-[20px] squishy-shadow border border-primary-fixed flex flex-col gap-stack-sm w-full relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute -right-4 -top-4 text-primary-container opacity-20">
+<span class="material-symbols-outlined text-[64px]" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div class="flex items-center gap-2 text-primary font-label-lg text-label-lg relative z-10">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+                        Suggestion
+                    </div>
+<p class="relative z-10">奶盖今天喝水有点少，要不要换个流动水碗试试？</p>
+<div class="flex gap-stack-sm mt-2 relative z-10">
+<button class="bg-white border-2 border-primary-container text-primary font-label-lg text-label-lg px-4 py-2 rounded-full hover:bg-surface-container-low transition-colors active:scale-95">
+                            了解更多
+                        </button>
+</div>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex items-end justify-end gap-stack-sm max-w-[85%] md:max-w-[70%] self-end">
+<div class="bg-primary text-on-primary font-body-md text-body-md p-stack-md rounded-[20px] rounded-br-[4px] active-shadow">
+                    好的，我试试！
+                </div>
+</div>
+<!-- Typing Indicator (Simulated) -->
+<div class="flex items-start gap-stack-sm max-w-[85%] md:max-w-[70%] opacity-70">
+<div class="w-[36px] h-[36px] rounded-full overflow-hidden shrink-0 bg-surface-container border border-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-text-secondary text-[20px]">smart_toy</span>
+</div>
+<div class="bg-white p-stack-md rounded-[20px] rounded-tl-[4px] squishy-shadow flex items-center gap-1 h-[48px]">
+<div class="w-2 h-2 bg-text-secondary rounded-full animate-bounce" style="animation-delay: 0s;"></div>
+<div class="w-2 h-2 bg-text-secondary rounded-full animate-bounce" style="animation-delay: 0.15s;"></div>
+<div class="w-2 h-2 bg-text-secondary rounded-full animate-bounce" style="animation-delay: 0.3s;"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Input & Quick Actions Area -->
+<div class="fixed bottom-[80px] md:bottom-0 left-0 w-full bg-gradient-to-t from-background-warm via-background-warm to-transparent pt-stack-lg pb-stack-sm md:pb-stack-lg z-40">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-stack-md">
+<!-- Quick Record Tags (Horizontal Scroll) -->
+<div class="flex gap-stack-sm overflow-x-auto hide-scrollbar pb-2 px-1 scroll-smooth snap-x">
+<button class="shrink-0 bg-white border border-surface-container-highest text-text-main font-label-lg text-label-lg px-4 py-3 rounded-full squishy-shadow hover:bg-surface-container-lowest transition-colors snap-start flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">restaurant</span>
+                    今天吃了什么？
+                </button>
+<button class="shrink-0 bg-white border border-surface-container-highest text-text-main font-label-lg text-label-lg px-4 py-3 rounded-full squishy-shadow hover:bg-surface-container-lowest transition-colors snap-start flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-warning">monitor_weight</span>
+                    体重记录
+                </button>
+<button class="shrink-0 bg-white border border-surface-container-highest text-text-main font-label-lg text-label-lg px-4 py-3 rounded-full squishy-shadow hover:bg-surface-container-lowest transition-colors snap-start flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-emergency">warning</span>
+                    Abnormalities
+                </button>
+<button class="shrink-0 bg-white border border-surface-container-highest text-text-main font-label-lg text-label-lg px-4 py-3 rounded-full squishy-shadow hover:bg-surface-container-lowest transition-colors snap-start flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">vaccines</span>
+                    Vaccine reminder
+                </button>
+</div>
+<!-- Input Field -->
+<div class="flex items-center gap-stack-sm bg-[#F5F5F5] rounded-[20px] p-2 inner-dimple border-2 border-transparent focus-within:border-primary focus-within:shadow-[0_0_0_4px_rgba(255,140,66,0.2)] transition-all">
+<button class="w-[40px] h-[40px] flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors shrink-0 text-text-secondary">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<input class="flex-1 bg-transparent border-none focus:ring-0 font-body-md text-body-md text-text-main placeholder:text-text-secondary py-2 px-1" placeholder="问问关于奶盖的事..." type="text"/>
+<button class="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-primary text-on-primary hover:bg-surface-tint transition-colors shrink-0 active:scale-95 shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Nav Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md rounded-t-xl z-50 shadow-[0_-4px_12px_rgba(0,0,0,0.06)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full w-[64px]" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-label-sm text-label-sm mt-1">首页</span>
+</a>
+<!-- Active Tab: AI -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-4 py-1 animate-bounce hover:bg-surface-container dark:hover:bg-surface-container-high w-[64px]" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<span class="font-label-sm text-label-sm mt-1">AI 助手</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full w-[64px]" href="#">
+<span class="material-symbols-outlined text-[24px]">inventory_2</span>
+<span class="font-label-sm text-label-sm mt-1">档案</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full w-[64px]" href="#">
+<span class="material-symbols-outlined text-[24px]">photo_camera</span>
+<span class="font-label-sm text-label-sm mt-1">监控</span>
+</a>
+</nav>
+<script>
+        // Simple drag to scroll for tags
+        const tagsContainer = document.querySelector('.overflow-x-auto');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        tagsContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            tagsContainer.classList.add('cursor-grabbing');
+            startX = e.pageX - tagsContainer.offsetLeft;
+            scrollLeft = tagsContainer.scrollLeft;
+        });
+        tagsContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+            tagsContainer.classList.remove('cursor-grabbing');
+        });
+        tagsContainer.addEventListener('mouseup', () => {
+            isDown = false;
+            tagsContainer.classList.remove('cursor-grabbing');
+        });
+        tagsContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - tagsContainer.offsetLeft;
+            const walk = (x - startX) * 2;
+            tagsContainer.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+</body></html>

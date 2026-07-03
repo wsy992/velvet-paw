@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background-warm": "#FFF8F0",
+                        "outline-variant": "#ddc1b3",
+                        "surface-container-highest": "#eae1da",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline": "#897266",
+                        "on-primary-container": "#6a2d00",
+                        "emergency": "#FF3B30",
+                        "fur-gray": "#808080",
+                        "on-tertiary-fixed": "#00201d",
+                        "lavender": "#C5B4E3",
+                        "secondary-container": "#ff6b9d",
+                        "background": "#fff8f4",
+                        "text-secondary": "#8E8E93",
+                        "surface-container": "#f6ece5",
+                        "on-surface-variant": "#564338",
+                        "surface-container-high": "#f0e6e0",
+                        "tertiary-fixed-dim": "#8ad4cc",
+                        "secondary-fixed": "#ffd9e1",
+                        "surface": "#fff8f4",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "warning": "#FF9500",
+                        "fur-brown-dark": "#8B6F47",
+                        "fur-gold": "#FFD700",
+                        "secondary": "#ac2a5d",
+                        "secondary-fixed-dim": "#ffb1c5",
+                        "surface-tint": "#9b4500",
+                        "on-tertiary-container": "#004742",
+                        "on-surface": "#1f1b17",
+                        "primary-container": "#ff8c42",
+                        "surface-variant": "#eae1da",
+                        "inverse-on-surface": "#f9efe8",
+                        "on-background": "#1f1b17",
+                        "surface-bright": "#fff8f4",
+                        "error": "#ba1a1a",
+                        "fur-brown-light": "#D4A574",
+                        "surface-dim": "#e2d8d2",
+                        "tertiary-container": "#6db7af",
+                        "tertiary": "#156963",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#331200",
+                        "primary": "#9b4500",
+                        "on-secondary-container": "#6e0034",
+                        "tertiary-fixed": "#a5f0e8",
+                        "primary-fixed": "#ffdbc9",
+                        "inverse-surface": "#34302b",
+                        "on-secondary-fixed": "#3f001b",
+                        "surface-container-low": "#fcf2eb",
+                        "on-secondary-fixed-variant": "#8c0a46",
+                        "success": "#34C759",
+                        "on-tertiary-fixed-variant": "#00504b",
+                        "text-main": "#2D2D2D",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#ffb68d",
+                        "on-primary-fixed-variant": "#763300",
+                        "inverse-primary": "#ffb68d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "unit": "4px",
+                        "stack-md": "16px",
+                        "gutter-desktop": "24px",
+                        "stack-lg": "24px",
+                        "margin-mobile": "20px",
+                        "gutter-mobile": "16px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Nunito Sans"],
+                        "body-lg": ["Nunito Sans"],
+                        "body-sm": ["Nunito Sans"],
+                        "headline-lg": ["Nunito Sans"],
+                        "label-lg": ["Nunito Sans"],
+                        "label-sm": ["Nunito Sans"],
+                        "headline-md": ["Nunito Sans"],
+                        "headline-lg-mobile": ["Nunito Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+                        "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-background-warm min-h-screen pb-24 font-body-md text-on-surface">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 dark:bg-on-background/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile py-stack-sm w-full">
+<div class="flex items-center gap-2">
+<img alt="Velvet Paw Avatar" class="w-10 h-10 rounded-full shadow-fluffy" data-alt="A small, cute, stylized cartoon avatar of a cat's face. The cat is friendly and designed in a soft, squishy 3D style, fitting a light-mode 'healing cartoon' aesthetic with warm oranges and browns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAvRApWBe8IVb2vbS6nHi-XowK46VJ9XLPEO0zbxeOHzRmdWD8Mir9TjnKXHM_eWinj4jSK93s8GFE7qe_AMUESbH1CyAh1Nx5S82rFJWJUZORDHg24FnLWOVzNAdvbh6dFMLu-nl5Mg5xBcpI01YYWanaNq27lZmNV0GiYyXWVw5-_ndVdoEnhtp0Zmb_LfYufjayFulH5lWpTZUSET-HDzRFok7kqb2wrDEs09GWWAzNfCadDWZ4-g">
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim font-bold tracking-tight">实时监控</h1>
+</div>
+<button aria-label="Settings" class="text-on-surface-variant dark:text-surface-variant hover:opacity-80 transition-opacity spring-bounce p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content Area - Camera Monitor Focus -->
+<main class="pt-24 px-margin-mobile max-w-[1200px] mx-auto md:px-margin-desktop">
+<!-- Live Feed Section -->
+<section class="mb-stack-lg">
+<div class="bg-inverse-surface rounded-3xl overflow-hidden shadow-floating relative aspect-video w-full group">
+<!-- Fallback/Placeholder Image for feed -->
+<div class="absolute inset-0 bg-cover bg-center opacity-80 mix-blend-luminosity" data-alt="A high-quality, wide-angle view from an indoor security camera looking into a cozy, sunlit living room. A fluffy golden retriever is sleeping peacefully on a plush rug. The lighting is warm and natural, emphasizing a soft, safe home environment suitable for a pet monitoring app." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGHi_Xjwkca3pfXEK9PjActgNX44rcsqXAGOdkqiSZcIpKIGzZZrlbjLlQfxhg4sNeAGgCGcZC9IuyvfclWQ8InCfZB8tS_dPMwU2j33FylnahtjXh6jTNWqh64U9ylNggk1qdamjxwU34v9vjbxhPgSNk049LW4X4KonHf1coM_SQAivAsy34RHatLLzARcPVOHJPtr3NpPhPFjTuITPVRMHlOQmCF0FWO2wzeiSweiRuX91khN2ifw')"></div>
+<!-- Overlay UI -->
+<div class="absolute top-4 left-4 flex items-center gap-2 bg-on-tertiary-fixed/60 backdrop-blur-md px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-emergency animate-pulse text-[16px]" style="font-variation-settings: 'FILL' 1;">fiber_manual_record</span>
+<span class="font-label-sm text-label-sm text-surface-container-lowest uppercase tracking-wider">直播中</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div class="bg-on-surface/50 backdrop-blur-sm px-3 py-1 rounded-lg">
+<span class="font-body-sm text-body-sm text-surface-container-lowest">客厅摄像头</span>
+</div>
+<div class="flex gap-2">
+<button class="bg-on-surface/50 backdrop-blur-sm p-2 rounded-full text-surface-container-lowest hover:bg-on-surface/70 transition-colors spring-bounce">
+<span class="material-symbols-outlined">mic</span>
+</button>
+<button class="bg-on-surface/50 backdrop-blur-sm p-2 rounded-full text-surface-container-lowest hover:bg-on-surface/70 transition-colors spring-bounce">
+<span class="material-symbols-outlined">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- Central Play/Monitor indicator (optional visual cue) -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+<span class="material-symbols-outlined text-[64px] text-surface-container-lowest/50" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<!-- Quick Camera Actions -->
+<div class="flex gap-4 mt-stack-md justify-center">
+<button class="flex-1 max-w-[160px] flex items-center justify-center gap-2 bg-primary-container text-on-primary-container py-3 px-4 rounded-full shadow-fluffy spring-bounce font-label-lg text-label-lg">
+<span class="material-symbols-outlined">photo_camera</span>
+                    立即抓拍
+                </button>
+<button class="flex-1 max-w-[160px] flex items-center justify-center gap-2 bg-surface-container-lowest border-2 border-outline-variant text-primary py-3 px-4 rounded-full shadow-fluffy spring-bounce font-label-lg text-label-lg">
+<span class="material-symbols-outlined">history</span>
+                    历史回放
+                </button>
+</div>
+</section>
+<!-- Recent Activity Section -->
+<section class="bg-surface-container-lowest rounded-[20px] p-stack-md shadow-fluffy">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-md">最近活动</h2>
+<div class="relative pl-6 border-l-2 border-dashed border-outline-variant space-y-stack-md">
+<!-- Activity Item 1 -->
+<div class="relative">
+<div class="absolute -left-[35px] top-1 w-[32px] h-[32px] rounded-full bg-primary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-on-primary-container">restaurant</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">正在吃饭</p>
+<p class="font-body-sm text-body-sm text-text-secondary">10:30 AM</p>
+</div>
+</div>
+<!-- Activity Item 2 -->
+<div class="relative">
+<div class="absolute -left-[35px] top-1 w-[32px] h-[32px] rounded-full bg-tertiary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">water_drop</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">正在喝水</p>
+<p class="font-body-sm text-body-sm text-text-secondary">09:15 AM</p>
+</div>
+</div>
+<!-- Activity Item 3 -->
+<div class="relative">
+<div class="absolute -left-[35px] top-1 w-[32px] h-[32px] rounded-full bg-surface-variant flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">bed</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">正在睡觉</p>
+<p class="font-body-sm text-body-sm text-text-secondary">08:00 AM</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav Bar -->
+<nav class="fixed bottom-0 w-full rounded-t-xl z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-[0_-4px_12px_rgba(0,0,0,0.06)] md:hidden">
+    <div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2">
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full transition-all duration-300" href="#">
+            <span class="material-symbols-outlined mb-1">home</span>
+            <span class="font-label-sm text-label-sm-mobile">首页</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full transition-all duration-300" href="#">
+            <span class="material-symbols-outlined mb-1">smart_toy</span>
+            <span class="font-label-sm text-label-sm-mobile">AI 助手</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full transition-all duration-300" href="#">
+            <span class="material-symbols-outlined mb-1">inventory_2</span>
+            <span class="font-label-sm text-label-sm-mobile">档案</span>
+        </a>
+        <a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-4 py-1 animate-bounce scale-90 transition-all duration-300 spring-physics shadow-floating" href="#">
+            <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+            <span class="font-label-sm text-label-sm-mobile">监控</span>
+        </a>
+    </div>
+</nav>
+<!-- Desktop Sidebar (Hidden on Mobile) -->
+<aside class="hidden md:flex flex-col fixed left-0 top-24 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/20 p-stack-md">
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 p-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-lg text-label-lg">首页</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-lg text-label-lg">AI 助手</span>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-label-lg text-label-lg">档案</span>
+</a>
+</nav></aside></body></html>

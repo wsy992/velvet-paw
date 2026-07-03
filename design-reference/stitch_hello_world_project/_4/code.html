@@ -1,0 +1,270 @@
+<!DOCTYPE html><html class="light" lang="zh-CN" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Velvet Paw - Growth Album</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#e2d8d2",
+                        "on-error": "#ffffff",
+                        "text-main": "#2D2D2D",
+                        "error": "#ba1a1a",
+                        "background": "#fff8f4",
+                        "outline-variant": "#ddc1b3",
+                        "primary-fixed": "#ffdbc9",
+                        "on-tertiary-container": "#004742",
+                        "tertiary-container": "#6db7af",
+                        "surface-container-high": "#f0e6e0",
+                        "surface-tint": "#9b4500",
+                        "fur-gold": "#FFD700",
+                        "fur-brown-dark": "#8B6F47",
+                        "success": "#34C759",
+                        "surface-variant": "#eae1da",
+                        "surface": "#fff8f4",
+                        "background-warm": "#FFF8F0",
+                        "secondary-fixed-dim": "#ffb1c5",
+                        "tertiary-fixed": "#a5f0e8",
+                        "surface-bright": "#fff8f4",
+                        "on-background": "#1f1b17",
+                        "warning": "#FF9500",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#fcf2eb",
+                        "on-secondary-fixed-variant": "#8c0a46",
+                        "primary": "#9b4500",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#156963",
+                        "outline": "#897266",
+                        "on-secondary-fixed": "#3f001b",
+                        "surface-container-highest": "#eae1da",
+                        "lavender": "#C5B4E3",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#ac2a5d",
+                        "inverse-surface": "#34302b",
+                        "tertiary-fixed-dim": "#8ad4cc",
+                        "emergency": "#FF3B30",
+                        "on-error-container": "#93000a",
+                        "fur-brown-light": "#D4A574",
+                        "surface-container": "#f6ece5",
+                        "secondary-container": "#ff6b9d",
+                        "on-surface": "#1f1b17",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#ff8c42",
+                        "on-tertiary-fixed-variant": "#00504b",
+                        "fur-gray": "#808080",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#763300",
+                        "inverse-on-surface": "#f9efe8",
+                        "inverse-primary": "#ffb68d",
+                        "primary-fixed-dim": "#ffb68d",
+                        "on-surface-variant": "#564338",
+                        "secondary-fixed": "#ffd9e1",
+                        "on-secondary-container": "#6e0034",
+                        "on-primary-fixed": "#331200",
+                        "text-secondary": "#8E8E93",
+                        "on-primary-container": "#6a2d00",
+                        "on-tertiary-fixed": "#00201d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "stack-md": "16px",
+                        "gutter-mobile": "16px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "24px",
+                        "margin-desktop": "40px",
+                        "gutter-desktop": "24px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Nunito Sans"],
+                        "body-sm": ["Nunito Sans"],
+                        "headline-md": ["Nunito Sans"],
+                        "body-lg": ["Nunito Sans"],
+                        "headline-lg": ["Nunito Sans"],
+                        "headline-lg-mobile": ["Nunito Sans"],
+                        "body-md": ["Nunito Sans"],
+                        "label-lg": ["Nunito Sans"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+                        "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Nunito Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Soft, multi-layered shadows for the "fluffy" feel */
+        .shadow-soft {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
+        }
+        .shadow-floating {
+            box-shadow: 0 8px 24px rgba(255,140,66,0.3), 0 4px 8px rgba(255,140,66,0.15);
+        }
+        /* Glassmorphism utility */
+        .glass {
+            background: rgba(255, 248, 244, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        /* Spring animation */
+        .spring-tap:active {
+            transform: scale(0.95);
+            transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-background-warm text-on-surface min-h-screen pb-[100px] md:pb-0 overflow-x-hidden">
+<!-- Top App Bar (Shared Component Hybrid) -->
+<header class="fixed top-0 w-full z-50 bg-background/80 dark:bg-on-background/80 backdrop-blur-md shadow-sm flex justify-between items-center px-margin-mobile py-stack-sm md:hidden">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A highly stylized, cute cartoon illustration of an orange cat's face. The cat has big expressive eyes and soft, rounded features. The illustration is warm and inviting, fitting a cozy, modern app design style, similar to an Animal Crossing character avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBML_peew3duwMmxebR3hwz2Daf2SMmx8ShLA04B6bMWDsugq2y4Y3S5VFY65btb7rzRv8vPrKwuoQ8i0FUswjJj6BtK67thNd4rTRvhSbhz5EY7sppf1bGqv3WaYkZomeP7dBmSwoo3egEtrwpgqWFXhUUxKlEc0Z8cw2o2zcu77_kMg6hTB6pLG3Y6pdNU--aZiFpuEVNxSePRmejlTwDPjP2ghR5jl_wmJ7AlLt0MLHCbVFKLxuLbQ">
+</div>
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">档案</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors spring-tap">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim text-2xl">settings</span>
+</button>
+</header>
+<!-- Desktop Navigation (Alternative to Top App Bar for larger screens) -->
+<div class="hidden md:flex fixed top-0 w-full z-50 glass shadow-sm px-margin-desktop py-stack-sm justify-between items-center">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary-container bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A highly stylized, cute cartoon illustration of an orange cat's face. The cat has big expressive eyes and soft, rounded features. The illustration is warm and inviting, fitting a cozy, modern app design style, similar to an Animal Crossing character avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDs1LjHnv_7lA5dg2fgF-M0_0qO0hh9HqydpKHEYQfyEkzESiYZLDM6IyE9AUebQHm3iJ4NsZdg_nzy0tN8TkPmfNRPchx8f9FUmSPOHrhVjdUu0GI5-UjvqZSwg-qX54kEAb0C6Co6rCicYWLY6czn-V8sxMpYzB8l87CySGr9aJS6iVo9UIf38B0djyrYM011ISS4vIitCBayC7YRxYEs9Hf7VV5LkCgYWmwUMAAXtlQrREYPN2HAg">
+</div>
+<span class="font-headline-lg text-headline-lg text-primary">Velvet Paw</span>
+</div>
+<nav class="flex gap-8"><a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#">首页</a><a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#">AI 助手</a><a class="font-body-lg text-body-lg text-primary font-bold border-b-4 border-primary pb-1" href="#">档案</a></nav>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container hover:opacity-90 transition-opacity spring-tap">
+<span class="material-symbols-outlined text-2xl">add_a_photo</span>
+</button>
+</div>
+<!-- Main Content Canvas -->
+<main class="pt-[80px] md:pt-[100px] px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto pb-24">
+<!-- Segmented Control (Tabs) -->
+<div class="flex justify-center mb-stack-lg">
+<div class="bg-surface-container rounded-full p-1 flex shadow-sm">
+<button class="px-6 py-2 rounded-full font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors spring-tap">
+                    成长时间轴
+                </button>
+<button class="px-6 py-2 rounded-full font-body-md text-body-md bg-white text-primary shadow-sm font-bold spring-tap transition-all">
+                    成长相册
+                </button>
+</div>
+</div>
+<!-- Profile Card -->
+<section class="bg-white rounded-[20px] p-stack-md shadow-soft mb-stack-lg flex items-center gap-stack-md relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-primary-container opacity-10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="w-20 h-20 md:w-24 md:h-24 rounded-[20px] overflow-hidden border-2 border-surface-container flex-shrink-0 bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="A close-up, high-quality photograph of an adorable orange tabby cat looking playfully at the camera. The lighting is soft and natural, creating a warm, cozy atmosphere. The background is a slightly blurred, light cream wall, ensuring the cat stands out with a very endearing expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS15-2HCmeXBSJs0nwc1KCV2wmYZ3JyrBZ-ilQH0XZyyzkV4zE6LE_tVs06F02xfbAaEkapiX0EmBTgVpmx1aPFK3Y569WRK6G3aP91_TbFk6A6m1WFYH0i5Ow6tSAs5vV-Yb8pHPuCRkS9Q0S5yXWKZHIB8uGnZ_6sKVRpaUJmPIutE5UIwk9ngo99_8iuqLOKfXV207CdyhK_ep8I5ZdjLRo3rta4U66SPhImQZM40rlTdSKFzB77w">
+</div>
+<div class="flex-grow">
+<div class="flex items-center gap-2 mb-1">
+<h1 class="font-headline-md text-headline-md text-on-surface m-0">奶盖</h1>
+<span class="material-symbols-outlined text-tertiary-container text-xl" title="Male">male</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-lg">cake</span>
+<span class="">2024.06.15</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<span class="">1岁17天</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Album Section -->
+<section>
+<!-- Month Header -->
+<div class="flex justify-between items-end mb-stack-md px-1">
+<h2 class="font-headline-md text-headline-md text-on-surface">2025年6月</h2>
+<span class="font-label-lg text-label-lg text-text-secondary">12张照片</span>
+</div>
+<!-- Masonry-ish / CSS Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[150px] md:auto-rows-[200px]">
+<!-- Photo Item (Large span) -->
+<div class="col-span-2 row-span-2 rounded-[20px] overflow-hidden shadow-soft relative group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A high-quality, sunlit photograph of an orange tabby cat sleeping peacefully in a woven basket. The warm sunlight casts soft shadows, creating a tranquil, cozy mood. The colors are dominated by warm oranges, creams, and earthy tones, fitting perfectly into a soft, inviting aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOEd7G_LOZdVGwWwh34H4jlX-NzvCUnZLjbj6PgVRnTkY3r35epzcdNj-Hn9Kmse023gYyQVWrDpN-04C-UrdTGvhcY6Oe-wY42Ehty9o6q_4ngHaQElKFFouzP21pC-lP-drQc9tvFFqQSZjZAUQi8ebSBbasOoYYD6-I7pl8ChshqP99xg2ajlAkd7_XU4d8t8eP8qsEN7NM0ia1_80ANJMMqneZL1ZeS-u2f_B6o_-LPlu_b5VwUg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+<span class="text-white font-label-sm text-label-sm drop-shadow-md">6月12日</span>
+</div>
+</div>
+<!-- Photo Item -->
+<div class="rounded-[20px] overflow-hidden shadow-soft relative group cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A cute photograph of an orange cat playing with a brightly colored feather toy. The cat is mid-pounce, showing dynamic action but maintaining a soft, playful vibe. The background is a clean, bright living room setting with modern, light-colored furniture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQAdSoUXtvxUjiH2CiuLvi2sCJlEduvA_hhQBTzoSTKUYhK7NQnokTapR3m64kf-wp_cQ_lSGbiisicJY4o7dFxhCCrRpKMpufStDrIhY8k97nTtDPu8GRg5vUy9x9b77d-eE_bBTX1NOLf2oeOozG1mtyXX379WDcnYtkjUnjRYoLoVIYX-bvlHf1tWz2qdGLCS7iCbhmSzsJCzKlFZ2c0R8SZwfme-4HIOsukbLPm9UZK6nBui9ZsQ">
+</div>
+<!-- Photo Item -->
+<div class="rounded-[20px] overflow-hidden shadow-soft relative group cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A close-up portrait of an orange cat's paws resting on a soft, fluffy white blanket. The image is highly textured, emphasizing the softness and warmth of the environment. The lighting is bright and diffuse, creating a serene and comforting image." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZmVdFmeJF2Ti_zIowrZr89PcfLXm5Q_YCnUpjrEhG1DUs6ngsio86jX1y_INOhk1hdHpiQIoRRje8uYp-f1FmElx8Dkv3C8_mKLjBHxX-6TEDV2LDw_BD3GQ5BkUiBjgLgTmlVtF6s6N5uDbDFaNY86j1ZgFmd5Inf3jME_53s4PEN5p8M_CGSJPu7E1b8GDRhwJw5rYxSabwOiR28WuE7Ya03VsJc9O4n5mBENfpod_dLnRSlCyJZQ">
+</div>
+<!-- Photo Item -->
+<div class="rounded-[20px] overflow-hidden shadow-soft relative group cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An adorable picture of an orange cat wearing a tiny, knitted blue collar with a small bell. The cat is looking directly at the camera with wide, curious eyes. The background is a soft, out-of-focus beige, making the cat the clear focal point in a warm, inviting style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjA90CCXBx2fpF5TAWdPD4zVRSGj6Y5JjVnZOd38NKP6DZ0m1Wtb_82LuEWo3M3gDb7QrQy_0TiXoNs8ciPLwowcMDY6BAVdXrdXuCw5tCm5i7xANN7ZCIh3J_HPxyIbyCiSa0yOPPf9LAZd3BDnipApA-tnJDq1noITUySFnLYdQwBbN5OIgfw-g2ndOxSnkS6wYxcWinFTAEzk71BPso4sdGkDody4CNJa6flaiyKjURF9ajPDgx7w">
+</div>
+<!-- Photo Item (Vertical span) -->
+<div class="row-span-2 rounded-[20px] overflow-hidden shadow-soft relative group cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A vertical photograph of an orange cat stretching lazily on a sunlit windowsill. There is a small potted plant next to the cat. The natural light creates a beautiful, warm glow, highlighting the cat's fur and the cozy domestic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5LJWliJ5Im8Z5Qq4KZlP9lbc4iLIDNQBQgab9SsIE-cE0VD53n3qA_gnU_YgCrVmRGjr9RF1huDs88qh8-RBqYKgBqwnE5XyQIUx4waeSUwylWLiO3cqrWZ-JLB0bSVhiy_xf_Dwa3LXpgkeQI0g-7ghuznbpiERTm15CVoBRMEWONOgI6r21ECXz1JrU9tSxw6Y9V_DeGmLCUoeAN354-H7IbND8FrSW1-cQ0h-8k64mi4muyuitqQ">
+</div>
+<!-- Photo Item -->
+<div class="rounded-[20px] overflow-hidden shadow-soft relative group cursor-pointer bg-surface-container flex items-center justify-center bg-primary-container/20 border-2 border-dashed border-primary/30 hover:bg-primary-container/30 transition-colors">
+<div class="flex flex-col items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">add_photo_alternate</span>
+<span class="font-label-lg text-label-lg">添加照片</span>
+</div>
+</div>
+</div>
+<!-- Month Header (Previous Month) -->
+<div class="flex justify-between items-end mb-stack-md mt-stack-lg px-1">
+<h2 class="font-headline-md text-headline-md text-on-surface">2025年5月</h2>
+<span class="font-label-lg text-label-lg text-text-secondary">8张照片</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[150px] md:auto-rows-[200px]">
+<!-- Photo Item -->
+<div class="rounded-[20px] overflow-hidden shadow-soft relative group cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A cute photo of an orange kitten sleeping in a very small cardboard box. The box is clearly too small, making it look incredibly endearing. The setting is bright and warm, fitting the cozy, pet-focused UI style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz_VgQI7-gGLoRrCOtOZIth3C2JDVeDddfe_pbe81Vuxp2VkfSgozWN2u8bmKJ49ohZY-OBSeD2FoWb8dX-7lbpq36_4Vn6QuqnnA9lLGYfUeAhyIqARdQEHTkZ7pAUdxkxhpH_QzpdCVrnvK3SLdF30QnVXXraOFpaP_l5ri8dc1Xa9uBlqSYFXs0GJxKnW0zkefVNJ3QOXWjSX2aaQZPY-YsCqBQ6XD2znvs-BmrYGcYSmpYJensng">
+</div>
+<!-- Photo Item -->
+<div class="rounded-[20px] overflow-hidden shadow-soft relative group cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An orange cat looking out of a window at a gentle rain. The scene is slightly moody but still warm and safe, emphasizing the cozy indoor environment compared to the outside." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr3NhGbZS3tcvrdoFBXY8rLLJql1qNnFylDV-64fzGBkzeC-OFyqSoajSsLPIzBNna4UpcnnyDsSWxkhig0PeGWka8wHtCDB-0ZjBoIRA20x2ofQunUn_802ITCORhf473r_cYskSgVHq_5LYqVY13d0pEeyn6T6DAIUw0xpRcGt31VUSHnmY67_Z8e4TWtE2pM_TdDFmbml94iJ_w4R7L8BIZtAk-xVBv8H1whwRLf339-P60_YJT-w">
+</div>
+</div>
+</section>
+</main>
+<!-- Upload FAB (Mobile focused) -->
+<button class="fixed bottom-[100px] right-margin-mobile w-14 h-14 bg-primary-container text-on-primary-container rounded-full shadow-floating flex justify-center items-center spring-tap z-40 md:hidden group hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl group-hover:rotate-90 transition-transform duration-300">add</span>
+</button>
+<!-- Bottom Navigation Bar (Shared Component - Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full rounded-t-xl z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-[0_-4px_12px_rgba(0,0,0,0.06)] flex justify-around items-center px-4 pb-4 pt-2 md:hidden"><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full transition-colors font-label-sm text-label-sm-mobile" href="#"><span class="material-symbols-outlined text-2xl mb-1">home</span><span class="">首页</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full transition-colors font-label-sm text-label-sm-mobile" href="#"><span class="material-symbols-outlined text-2xl mb-1">smart_toy</span><span class="">AI 助手</span></a><a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-4 py-1 animate-bounce hover:bg-surface-container dark:hover:bg-surface-container-high font-label-sm text-label-sm-mobile scale-90 transition-all duration-300 spring-physics" href="#"><span class="material-symbols-outlined filled-icon text-2xl mb-1">inventory_2</span><span class="">档案</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full transition-colors font-label-sm text-label-sm-mobile" href="#"><span class="material-symbols-outlined text-2xl mb-1">photo_camera</span><span class="">监控</span></a></nav>
+
+
+</body></html>

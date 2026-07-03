@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background-warm": "#FFF8F0",
+                    "outline-variant": "#ddc1b3",
+                    "surface-container-highest": "#eae1da",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline": "#897266",
+                    "on-primary-container": "#6a2d00",
+                    "emergency": "#FF3B30",
+                    "fur-gray": "#808080",
+                    "on-tertiary-fixed": "#00201d",
+                    "lavender": "#C5B4E3",
+                    "secondary-container": "#ff6b9d",
+                    "background": "#fff8f4",
+                    "text-secondary": "#8E8E93",
+                    "surface-container": "#f6ece5",
+                    "on-surface-variant": "#564338",
+                    "surface-container-high": "#f0e6e0",
+                    "tertiary-fixed-dim": "#8ad4cc",
+                    "secondary-fixed": "#ffd9e1",
+                    "surface": "#fff8f4",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "warning": "#FF9500",
+                    "fur-brown-dark": "#8B6F47",
+                    "fur-gold": "#FFD700",
+                    "secondary": "#ac2a5d",
+                    "secondary-fixed-dim": "#ffb1c5",
+                    "surface-tint": "#9b4500",
+                    "on-tertiary-container": "#004742",
+                    "on-surface": "#1f1b17",
+                    "primary-container": "#ff8c42",
+                    "surface-variant": "#eae1da",
+                    "inverse-on-surface": "#f9efe8",
+                    "on-background": "#1f1b17",
+                    "surface-bright": "#fff8f4",
+                    "error": "#ba1a1a",
+                    "fur-brown-light": "#D4A574",
+                    "surface-dim": "#e2d8d2",
+                    "tertiary-container": "#6db7af",
+                    "tertiary": "#156963",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#331200",
+                    "primary": "#9b4500",
+                    "on-secondary-container": "#6e0034",
+                    "tertiary-fixed": "#a5f0e8",
+                    "primary-fixed": "#ffdbc9",
+                    "inverse-surface": "#34302b",
+                    "on-secondary-fixed": "#3f001b",
+                    "surface-container-low": "#fcf2eb",
+                    "on-secondary-fixed-variant": "#8c0a46",
+                    "success": "#34C759",
+                    "on-tertiary-fixed-variant": "#00504b",
+                    "text-main": "#2D2D2D",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed-dim": "#ffb68d",
+                    "on-primary-fixed-variant": "#763300",
+                    "inverse-primary": "#ffb68d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "unit": "4px",
+                    "stack-md": "16px",
+                    "gutter-desktop": "24px",
+                    "stack-lg": "24px",
+                    "margin-mobile": "20px",
+                    "gutter-mobile": "16px",
+                    "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                    "body-md": ["Nunito Sans"],
+                    "body-lg": ["Nunito Sans"],
+                    "body-sm": ["Nunito Sans"],
+                    "headline-lg": ["Nunito Sans"],
+                    "label-lg": ["Nunito Sans"],
+                    "label-sm": ["Nunito Sans"],
+                    "headline-md": ["Nunito Sans"],
+                    "headline-lg-mobile": ["Nunito Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-lg": ["14px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+                    "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["26px", {"lineHeight": "32px", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script></head><body class="font-body-md text-text-main pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 dark:bg-on-background/80 backdrop-blur-md shadow-sm hidden md:flex">
+<div class="flex justify-between items-center px-margin-mobile py-stack-sm w-full max-w-[1200px] mx-auto">
+<div class="flex items-center gap-stack-sm">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="A small, stylized avatar of a cute fluffy cat face in a warm healing cartoon style, suitable for a pet app icon, soft cream and orange colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmTujI2nGr1ZD0GzvdMG5PKm_oXXYwqPnXHQGETUUA88ua7GHzunoGmKqKZvI_y1XVfiq_avHNk0Px_-AEZ__f_j7TNaFawG4AblPE4Mpz0CXgt1upFn-sh1BtmKZ2u_rDvbG5VcVtABBejMnqb8d2oAorg1oOt2L35waJ4r2LYLt4g-VkLLH75WFDrKnYwaCnm_mEcvNOpFXD2BCiQNmuHxqbMSK7XLNmhk4t2FFWiGx6rH7V-GHoqA">
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim">Velvet Paw</h1>
+</div>
+<nav class="flex gap-gutter-desktop">
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity font-label-lg text-label-lg" href="#">首页</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity font-label-lg text-label-lg" href="#">AI 助手</a>
+<a class="text-primary hover:opacity-80 transition-opacity font-label-lg text-label-lg" href="#">档案</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity font-label-lg text-label-lg" href="#">监控</a>
+</nav>
+<button class="text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<!-- Mobile Top Header (Non-Nav) -->
+<header class="md:hidden fixed top-0 w-full z-40 bg-background-warm/90 backdrop-blur-md shadow-sm py-stack-sm px-margin-mobile flex justify-between items-center">
+<h1 class="font-headline-md text-headline-md text-primary">档案</h1>
+<button class="text-primary hover:opacity-80">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="max-w-[1200px] mx-auto pt-24 md:pt-32 px-margin-mobile md:px-margin-desktop">
+<!-- Profile Header -->
+<section class="bg-gradient-to-br from-primary-fixed to-surface-container-highest rounded-3xl p-stack-lg mb-stack-lg ambient-shadow relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-white/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-stack-md relative z-10">
+<img class="w-24 h-24 rounded-full border-4 border-white ambient-shadow object-cover" data-alt="A beautiful close-up photo of a fluffy white and orange cat (milk cap pattern) looking gently at the camera, warm lighting, cozy home background, high quality portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLb4LX4AwwdRW2sEImg2WS9Jaerhpa2hWTd5PtOatCG91to5OYuahXvhiRpZr3RQcps4Xl7Iyxn8xvlibCSWaFCMB-RH4omE4SkNW3FglUDyL_aYEFja4sk8KFXAAj18tR-6azGw-V8LxN0eefF9RKm4mSzA5NIxQ3kR7Yda_zhG9bOypGSzG4Wm1KEjAoOEzeOUs4r9L4CBMchtnXPlDNQPOzWl12casX6Rire5T1azdSgniKdq3f0Q">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">奶盖</h2>
+<span class="bg-secondary-fixed text-on-secondary-container rounded-full px-2 py-0.5 text-xs font-bold flex items-center">
+<span class="material-symbols-outlined text-[14px]" data-icon="female">female</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">出生于: 2024.06.15</p>
+<p class="font-label-lg text-label-lg text-primary">1岁17天</p>
+</div>
+</div>
+</section>
+<!-- Function Tabs (Glassmorphism) -->
+<section class="flex overflow-x-auto gap-stack-sm pb-2 mb-stack-lg snap-x no-scrollbar">
+<button class="glass-tab px-6 py-2 rounded-full snap-start whitespace-nowrap bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm border-none">
+                疫苗
+            </button>
+<button class="glass-tab px-6 py-2 rounded-full snap-start whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:bg-white/80 transition-colors">
+                驱虫
+            </button>
+<button class="glass-tab px-6 py-2 rounded-full snap-start whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:bg-white/80 transition-colors">
+                体重
+            </button>
+<button class="glass-tab px-6 py-2 rounded-full snap-start whitespace-nowrap text-on-surface-variant font-label-lg text-label-lg hover:bg-white/80 transition-colors">
+                Notes
+            </button>
+</section>
+<!-- Timeline -->
+<section class="pl-2">
+<div class="relative timeline-node mb-stack-lg group">
+<div class="timeline-line flex gap-stack-md relative z-10">
+<div class="w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px]" data-icon="vaccines">vaccines</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-stack-md ambient-shadow flex-1 hover:shadow-md transition-shadow">
+<span class="font-label-sm text-label-sm text-tertiary mb-1 block">2025.06.15</span>
+<h3 class="font-body-lg text-body-lg text-on-surface">年度疫苗</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">猫三联加强针。下一次在1年后。</p>
+</div>
+</div>
+</div>
+<div class="relative timeline-node mb-stack-lg group">
+<div class="timeline-line flex gap-stack-md relative z-10">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container text-[18px]" data-icon="bug_report">bug_report</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-stack-md ambient-shadow flex-1 hover:shadow-md transition-shadow">
+<span class="font-label-sm text-label-sm text-secondary mb-1 block">2025.05.01</span>
+<h3 class="font-body-lg text-body-lg text-on-surface">驱虫记录</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">已进行体内外驱虫。</p>
+</div>
+</div>
+</div>
+<div class="relative timeline-node mb-stack-lg group">
+<div class="timeline-line flex gap-stack-md relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container text-[18px]" data-icon="monitor_weight">monitor_weight</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-stack-md ambient-shadow flex-1 hover:shadow-md transition-shadow">
+<span class="font-label-sm text-label-sm text-primary mb-1 block">2025.04.01</span>
+<h3 class="font-body-lg text-body-lg text-on-surface">体重记录</h3>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="text-2xl font-bold text-on-surface">4.2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">kg</span>
+</div>
+</div>
+</div>
+</div>
+<div class="relative timeline-node mb-stack-lg group">
+<div class="timeline-line flex gap-stack-md relative z-10">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]" data-icon="favorite">favorite</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-stack-md ambient-shadow flex-1 hover:shadow-md transition-shadow">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1 block">2025.03.15</span>
+<h3 class="font-body-lg text-body-lg text-on-surface">首次体检</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">身体健康，活泼好动。已注册芯片。</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-6 md:right-10 bg-primary text-on-primary rounded-full px-6 py-4 flex items-center gap-2 shadow-[0_8px_16px_rgba(255,140,66,0.3)] hover:scale-105 transition-transform duration-300 z-40 spring-hover">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+<span class="font-label-lg text-label-lg">添加记录</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-[0_-4px_12px_rgba(0,0,0,0.06)] rounded-t-xl z-50"><a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full" href="#">
+  <span class="material-symbols-outlined">home</span>
+  <span class="font-label-sm text-label-sm mt-1">首页</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full" href="#">
+  <span class="material-symbols-outlined">smart_toy</span>
+  <span class="font-label-sm text-label-sm mt-1">AI 助手</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-4 py-1 animate-bounce" href="#">
+  <span class="material-symbols-outlined">inventory_2</span>
+  <span class="font-label-sm text-label-sm mt-1">档案</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-2 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full" href="#">
+  <span class="material-symbols-outlined">photo_camera</span>
+  <span class="font-label-sm text-label-sm mt-1">监控</span>
+</a></nav></body></html>
